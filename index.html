@@ -12,38 +12,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
     <!-- Background Elements -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="bg-grid"></div>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
             <span class="gradient-text">Yulya</span>
         </div>
         <div class="nav-links">
+            <a href="#showcase">3D Showcase</a>
             <a href="#ecosystem">Ecosystem</a>
             <a href="#about">About</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <div class="badge">The Yulya Universe</div>
-            <h1 class="hero-title">Meet <span class="gradient-text">Yulya</span>.</h1>
-            <p class="hero-subtitle">Not just a bot. A constantly evolving artificial intelligence ecosystem spanning across Discord, the Web, and gaming.</p>
+            <div class="hero-copy">
+                <div class="badge">The Yulya Universe</div>
+                <h1 class="hero-title">A beautiful AI world built around <span class="gradient-text">Yulya</span>.</h1>
+                <p class="hero-subtitle">A modern ecosystem across Discord, the web, and immersive experiences — crafted with a premium visual identity.</p>
+                <div class="cta-group">
+                    <a class="btn btn-primary" href="https://studio.yulya.me" target="_blank" rel="noreferrer">Open Studio</a>
+                    <a class="btn btn-secondary" href="#showcase">See 3D Motion</a>
+                </div>
+            </div>
+            <div class="hero-preview glass">
+                <div class="hero-preview-glow"></div>
+                <img src="https://github.com/user-attachments/assets/022060d9-18cf-4778-a5f4-483eb659bca6" alt="Yulya character artwork" class="hero-image">
+            </div>
         </div>
     </header>
 
-    <!-- Ecosystem Grid Section -->
+    <section id="showcase" class="showcase">
+        <div class="showcase-copy">
+            <h2 class="section-title">Yulya <span class="gradient-text">3D Presence</span></h2>
+            <p>Scroll to animate Yulya in space. The character subtly rotates and shifts depth as the page moves, creating a living 3D-style experience.</p>
+        </div>
+        <div class="character-stage">
+            <div class="stage-ring ring-1"></div>
+            <div class="stage-ring ring-2"></div>
+            <div class="stage-light"></div>
+            <div class="character-model-wrap">
+                <img id="characterModel" src="https://github.com/user-attachments/assets/022060d9-18cf-4778-a5f4-483eb659bca6" alt="Yulya in purple neon style" class="character-model">
+            </div>
+        </div>
+    </section>
+
     <section id="ecosystem" class="features ecosystem-section">
         <h2 class="section-title">Explore the <span class="gradient-text">Network</span></h2>
         <div class="grid ecosystem-grid">
-            
-            <!-- Discord Bot -->
+
             <a href="https://invite.yulya.me" target="_blank" class="card glass interactive-card">
                 <div class="card-header">
                     <div class="card-icon"><i class="fa-brands fa-discord"></i></div>
@@ -54,7 +76,6 @@
                 <span class="card-cta">Invite Bot &rarr;</span>
             </a>
 
-            <!-- Web Dashboard -->
             <a href="https://discord.yulya.me" target="_blank" class="card glass interactive-card">
                 <div class="card-header">
                     <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
@@ -65,7 +86,16 @@
                 <span class="card-cta">Open Dashboard &rarr;</span>
             </a>
 
-            <!-- Web / Mobile App -->
+            <a href="https://studio.yulya.me" target="_blank" class="card glass interactive-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="status live">New</div>
+                </div>
+                <h3>Yulya Studio</h3>
+                <p>Your creative command center for designing prompts, personas, workflows, and visual experiences for Yulya.</p>
+                <span class="card-cta">Open Studio &rarr;</span>
+            </a>
+
             <div class="card glass interactive-card disabled">
                 <div class="card-header">
                     <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
@@ -76,7 +106,6 @@
                 <span class="card-cta">Coming Soon</span>
             </div>
 
-            <!-- The Game -->
             <div class="card glass interactive-card disabled">
                 <div class="card-header">
                     <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
@@ -86,8 +115,7 @@
                 <p>An immersive, AI-generated RPG experience where every NPC and storyline is dynamically driven by Yulya's engine.</p>
                 <span class="card-cta">Coming Soon</span>
             </div>
-            
-            <!-- API Platform -->
+
             <div class="card glass interactive-card disabled">
                 <div class="card-header">
                     <div class="card-icon"><i class="fa-solid fa-code"></i></div>
@@ -97,7 +125,13 @@
                 <p>Build your own applications on top of the Yulya infrastructure with our developer SDK and routing algorithms.</p>
                 <span class="card-cta">Coming Soon</span>
             </div>
+        </div>
+    </section>
 
+    <section id="about" class="about-section">
+        <div class="about-panel glass">
+            <h2>Designed for identity, speed, and future expansion.</h2>
+            <p>From assistant to ecosystem, Yulya now has a polished landing experience with stronger visual direction and immersive interaction.</p>
         </div>
     </section>
 
@@ -106,5 +140,6 @@
         <p>Support: <a href="mailto:support@yulya.me" class="gradient-text">support@yulya.me</a></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
